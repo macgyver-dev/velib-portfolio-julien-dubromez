@@ -1,0 +1,53 @@
+#bike-search
+{
+    display: block;
+    position: absolute;
+    top:-5px;
+    left: 120px;
+    color:white;
+}
+
+.size-row-search
+{
+    width: 580px;
+}
+
+#bike-search-responsive {
+    display: none;
+}
+
+@media screen and (max-width: 801px) {
+
+    .size-row-search
+    {
+        width: 100%;
+    }
+
+    #bike-search {
+        display: none;
+    }
+
+    #bike-search-responsive {
+        display: block;
+        word-break: break-all;
+    }
+
+    #bike-search-responsive > p {
+        word-break: break-word;
+    }
+    #bike-img-header {
+        display: none;
+    }
+
+}
+
+/*********************** DEBUG **************************/
+.debug
+{
+    border: 1px solid red;
+}
+
+.debug-green
+{
+    border: 1px solid green;
+}

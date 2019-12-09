@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta name="identifier-url" content="http://www.velib.com/"/>
+    <meta name="title" content="velib"/>
+    <meta name="description" content="Location de velo"/>
+    <meta name="keywords" content="location, velo, electrique, Lille"/>
+    <meta name="author" content="Dubromez Julien"/>
+    <meta name="revisit-after" content="15"/>
+    <meta name="language" content="FR"/>
+    <meta name="copyright" content="© 2019 Velib"/>
+    <meta name="robots" content="All"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link  href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/images.css">
+    <title>Velib</title>
+</head>
+<body class="bg-secondary">
+<div class="container-fluid ">
+    <!-- Navigation Bar -->
+    <nav class=" row navbar navbar-expand-lg navbar-dark bg-dark p-5">
+        <img class="img-fluid" id="logo" src="img/Logo.png"/>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+                aria-controls="navbarColor01" aria-expanded="true" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse collapse show  " >
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="index.html">Location </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="support.html">Support<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="a-propos.html">A propos</a>
+                </li>
+                <li class="nav-item  ">
+                    <a class="nav-link" href="registration.html">
+                        <button class="btn bg-success m-1">Inscription</button>
+                    </a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="login.html">
+                        <button class="btn bg-primary m-1">Connexion</button>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- End navigation Bar -->
+    <!--Section: Contact v.2-->
+    <section class="mb-5 mt-5 bg-light p-5 w-75 mx-auto">
+
+        <!--Section heading-->
+        <h2 class="h1-responsive font-weight-bold text-center my-4">Support</h2>
+        <!--Section description-->
+        <p class="text-center w-responsive mx-auto mb-5">
+            Avez-vous des questions? S'il vous plaît n'hésitez pas
+            à nous contacter directement. Notre équipe vous recontactera dans les heures qui suivent pour vous aider.
+        </p>
+
+        <div class="row">
+
+            <!--Grid column-->
+            <div class="col-md-9 mb-md-0 mb-5">
+                <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                    <!--Grid row-->
+                    <div class="row">
+
+                        <!--Grid column-->
+                        <div class="col-md-6">
+                            <div class="md-form mb-0 ">
+                                <input type="text" id="name" name="name" class="form-control">
+                                <label for="name" class="">Votre nom</label>
+                            </div>
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-md-6">
+                            <div class="md-form mb-0 ">
+                                <input type="text" id="email" name="email" class="form-control">
+                                <label for="email" class="">Votre email</label>
+                            </div>
+                        </div>
+                        <!--Grid column-->
+
+                    </div>
+                    <!--Grid row-->
+
+                    <!--Grid row-->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="md-form mb-0 ">
+                                <input type="text" id="subject" name="subject" class="form-control">
+                                <label for="subject" class="">Sujet</label>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Grid row-->
+
+                    <!--Grid row-->
+                    <div class="row">
+
+                        <!--Grid column-->
+                        <div class="col-md-12">
+
+                            <div class="md-form ">
+                                <textarea type="text" id="message" name="message" w-100 rows="7" class="form-control md-textarea"></textarea>
+                                <label for="message">Votre message</label>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--Grid row-->
+                    <div class="col-md-12 ml-5 p-5">
+                        <a class="btn btn-primary float-right w-50 h-25   text-white" onclick="document.getElementById('contact-form').submit();">Send</a>
+                    </div>
+                    <div class="status"></div>
+                </form>
+
+
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-md-3 text-center">
+                <ul class="list-unstyled mb-0">
+                    <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                        <p>Lille, CA 59126, France</p>
+                    </li>
+                    <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                        <p>contact@velib.com</p>
+                    </li>
+                </ul>
+            </div>
+            <!--Grid column-->
+
+        </div>
+
+    </section>
+    <!--Section: Contact v.2-->
+    <div class="bg-dark row">
+        <footer class="bg-dark col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 row p-5">
+            <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8">
+
+            </div>
+            <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 p-5">
+                <div>
+                    <a href="mention-legal.html">Mention Légal</a>
+                </div>
+                <div>
+                    <a href="condition-utilisation.html">Condition d'utilisation</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</div>
+
+</body>
+</html>
